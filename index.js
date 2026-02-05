@@ -101,7 +101,7 @@ function displayWeatherInfo(data){
     feelsLikeDisplay.textContent = `Feels Like: ${(feels_like - 273.15).toFixed(1)}°C`;
     descDisplay.textContent = description;
     weatherEmoji.textContent = getWeatherEmoji(id);
-    windDisplay.textContent = `Wind Speed: ${speed} m/s`;
+    windDisplay.textContent = `Wind Speed: ${(speed*3.6).toFixed(2)} km/h`;
     timeDisplay.textContent = `Last Updated: ${timeString}`;
     googleMapBtn.textContent = "Open in Google Maps";
     googleMapBtn.type = "button";
